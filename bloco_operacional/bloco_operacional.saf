@@ -1,0 +1,68 @@
+# Copyright (C) 1991-2009 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+
+# Signal Activity File Name: "C:/Users/heliojunior/Desktop/Projeto/bloco_operacional/bloco_operacional.saf"
+# Created On: "06/16/2013 12:01:20"
+# Created By: "Version 9.0 Build 132 02/25/2009 SJ Web Edition"
+# This file was created by the Quartus(R) II Simulator with glitch filtering disabled.
+
+FORMAT_VERSION 1;
+
+DEFINE_FLAG TOGGLE_RATE_FROM_SIMULATION 0x1;
+DEFINE_FLAG STATIC_PROBABILITY_FROM_SIMULATION 0x2;
+DEFINE_FLAG TOGGLE_RATE_FROM_USER 0x4;
+DEFINE_FLAG STATIC_PROBABILITY_FROM_USER 0x8;
+DEFINE_FLAG TOGGLE_RATE_FROM_USER_DEFAULT 0x10;
+DEFINE_FLAG STATIC_PROBABILITY_FROM_USER_DEFAULT 0x20;
+DEFINE_FLAG TOGGLE_RATE_FROM_VECTORLESS_ESTIMATION 0x40;
+DEFINE_FLAG STATIC_PROBABILITY_FROM_VECTORLESS_ESTIMATION 0x80;
+DEFINE_FLAG TOGGLE_RATE_ASSUMED_ZERO 0x100;
+DEFINE_FLAG TOGGLE_RATE_CLIPPED_TO_MAX 0x200;
+
+BEGIN_OUTPUT_SIGNAL_INFO;
+
+# Output Signal Information Line Format Description:
+
+# <one or more spaces><partial output signal name><spaces>[<flags mask><spaces><toggle rate><spaces><static probability>]<;>
+
+ clear 0x3 8.5e+007 0.56;
+ clock 0x3 1.99e+008 0.5;
+ comp 0x3 0 0;
+ componente_comparador:compa2;
+  LessThan0~0 0x3 3.6e+007 0.21;
+  LessThan0~1 0x3 3.6e+007 0.185;
+  LessThan0~2 0x3 0 0;
+  LessThan0~3 0x3 0 0;
+ componete_comparador2:compa3;
+  LessThan0~0 0x3 0 1;
+  LessThan0~1 0x3 0 0;
+ compdois 0x3 0 1;
+ componente_contador:cont1;
+  Add0~0 0x3 3.6e+007 0.21;
+  Add0~1 0x3 0 0;
+  Add0~2 0x3 0 0;
+  Add0~3 0x3 0 0;
+  Add0~4 0x3 0 0;
+  reg[0] 0x3 3.6e+007 0.185;
+  reg[1] 0x3 8e+006 0.025;
+  reg[2] 0x3 0 0;
+  reg[3] 0x3 0 0;
+ load_reg 0x3 1.02e+008 0.505;
+
+END_OUTPUT_SIGNAL_INFO;
+
+TOGGLE_PERCENTAGE 40;
+
+PERCENTAGE_OF_TIME_SIGNALS_IN_UNKNOWN_STATE 0;
+

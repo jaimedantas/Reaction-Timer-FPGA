@@ -1,0 +1,20 @@
+|componente_contador
+cnt => reg[0].ENA
+cnt => reg[1].ENA
+cnt => reg[2].ENA
+cnt => reg[3].ENA
+ck => reg[3].CLK
+ck => reg[2].CLK
+ck => reg[1].CLK
+ck => reg[0].CLK
+cl => reg[3].ACLR
+cl => reg[2].ACLR
+cl => reg[1].ACLR
+cl => reg[0].ACLR
+tc <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+C[0] <= reg[0].DB_MAX_OUTPUT_PORT_TYPE
+C[1] <= reg[1].DB_MAX_OUTPUT_PORT_TYPE
+C[2] <= reg[2].DB_MAX_OUTPUT_PORT_TYPE
+C[3] <= reg[3].DB_MAX_OUTPUT_PORT_TYPE
+
+

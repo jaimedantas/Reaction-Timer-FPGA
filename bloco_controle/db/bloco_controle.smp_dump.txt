@@ -1,0 +1,9 @@
+
+State Machine - |bloco_controle|estado_atual
+Name estado_atual.CONTADOR2 estado_atual.LIGA estado_atual.CONTADOR1 estado_atual.RESULTADO estado_atual.SLOW estado_atual.INICIAR 
+estado_atual.INICIAR 0 0 0 0 0 0 
+estado_atual.SLOW 0 0 0 0 1 1 
+estado_atual.RESULTADO 0 0 0 1 0 1 
+estado_atual.CONTADOR1 0 0 1 0 0 1 
+estado_atual.LIGA 0 1 0 0 0 1 
+estado_atual.CONTADOR2 1 0 0 0 0 1 

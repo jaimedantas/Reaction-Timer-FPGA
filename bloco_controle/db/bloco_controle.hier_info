@@ -1,0 +1,10 @@
+|bloco_controle
+clr_r <= comb~5
+load_r <= comb~4
+len <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+lento <= process_0~6.DB_MAX_OUTPUT_PORT_TYPE
+estado[0] <= estado_teste[0].DB_MAX_OUTPUT_PORT_TYPE
+estado[1] <= estado_teste[1].DB_MAX_OUTPUT_PORT_TYPE
+estado[2] <= estado_teste[2].DB_MAX_OUTPUT_PORT_TYPE
+
+

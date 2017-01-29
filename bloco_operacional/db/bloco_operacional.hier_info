@@ -1,0 +1,52 @@
+|bloco_operacional
+load_reg => componente_contador:cont1.cnt
+clock => componente_contador:cont1.ck
+clear => componente_contador:cont1.cl
+comp <= componente_comparador:compa2.S
+compdois <= componete_comparador2:compa3.SAIR
+
+
+|bloco_operacional|componente_contador:cont1
+cnt => reg[0].ENA
+cnt => reg[1].ENA
+cnt => reg[2].ENA
+cnt => reg[3].ENA
+ck => reg[3].CLK
+ck => reg[2].CLK
+ck => reg[1].CLK
+ck => reg[0].CLK
+cl => reg[3].ACLR
+cl => reg[2].ACLR
+cl => reg[1].ACLR
+cl => reg[0].ACLR
+tc <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+C[0] <= reg[0].DB_MAX_OUTPUT_PORT_TYPE
+C[1] <= reg[1].DB_MAX_OUTPUT_PORT_TYPE
+C[2] <= reg[2].DB_MAX_OUTPUT_PORT_TYPE
+C[3] <= reg[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bloco_operacional|componente_comparador:compa2
+A[0] => LessThan0.IN4
+A[1] => LessThan0.IN3
+A[2] => LessThan0.IN2
+A[3] => LessThan0.IN1
+B[0] => LessThan0.IN8
+B[1] => LessThan0.IN7
+B[2] => LessThan0.IN6
+B[3] => LessThan0.IN5
+S <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bloco_operacional|componete_comparador2:compa3
+D[0] => LessThan0.IN4
+D[1] => LessThan0.IN3
+D[2] => LessThan0.IN2
+D[3] => LessThan0.IN1
+E[0] => LessThan0.IN8
+E[1] => LessThan0.IN7
+E[2] => LessThan0.IN6
+E[3] => LessThan0.IN5
+SAIR <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+
+

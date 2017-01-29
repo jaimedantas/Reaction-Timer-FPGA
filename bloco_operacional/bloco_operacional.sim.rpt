@@ -1,0 +1,232 @@
+Simulator report for bloco_operacional
+Sun Jun 16 12:01:20 2013
+Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Simulation Signal Activity
+  6. Coverage Summary
+  7. Complete 1/0-Value Coverage
+  8. Missing 1-Value Coverage
+  9. Missing 0-Value Coverage
+ 10. Simulator INI Usage
+ 11. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 20 nodes     ;
+; Simulation Coverage         ;      36.84 % ;
+; Total Number of Transitions ; 546          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Stratix II   ;
++-----------------------------+--------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                        ;
++--------------------------------------------------------------------------------------------+----------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                      ; Default Value ;
++--------------------------------------------------------------------------------------------+----------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                   ; Timing        ;
+; Start time                                                                                 ; 0 ns                                         ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF                                         ;               ;
+; Vector input source                                                                        ; ../componente_contador/bloco_operacional.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                           ; On            ;
+; Check outputs                                                                              ; Off                                          ; Off           ;
+; Report simulation coverage                                                                 ; On                                           ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                           ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                           ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                           ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                          ; Off           ;
+; Detect glitches                                                                            ; Off                                          ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                          ; Off           ;
+; Generate Signal Activity File                                                              ; On                                           ; Off           ;
+; Signal Activity File output destination                                                    ; bloco_operacional.saf                        ;               ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                          ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                          ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                           ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                   ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                          ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; On                                           ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                         ; Auto          ;
++--------------------------------------------------------------------------------------------+----------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
+Start time : 0 ps
+End time : 1.0 us
+Time duration : 1.0 us
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulation Signal Activity                                                                                                                                                                                    ;
++-------------------------------------------------------------+-------------------------------------------------------------+------------------+--------------+--------------------+----------------------------+
+; Node Name                                                   ; Output Port Name                                            ; Output Port Type ; Toggle Count ; VCC Value Duration ; X (Unknown) Value Duration ;
++-------------------------------------------------------------+-------------------------------------------------------------+------------------+--------------+--------------------+----------------------------+
+; |bloco_operacional|load_reg                                 ; |bloco_operacional|load_reg                                 ; out              ;      102.0   ; 505.0 ns           ; 0 ps                       ;
+; |bloco_operacional|clock                                    ; |bloco_operacional|clock                                    ; out              ;      199.0   ; 500.0 ns           ; 0 ps                       ;
+; |bloco_operacional|clear                                    ; |bloco_operacional|clear                                    ; out              ;       85.0   ; 560.0 ns           ; 0 ps                       ;
+; |bloco_operacional|comp                                     ; |bloco_operacional|comp                                     ; pin_out          ;        0.0   ; 0 ps               ; 0 ps                       ;
+; |bloco_operacional|compdois                                 ; |bloco_operacional|compdois                                 ; pin_out          ;        0.0   ; 1.0 us             ; 0 ps                       ;
+; |bloco_operacional|componente_contador:cont1|reg[0]         ; |bloco_operacional|componente_contador:cont1|reg[0]         ; regout           ;       36.0   ; 185.0 ns           ; 0 ps                       ;
+; |bloco_operacional|componente_contador:cont1|reg[1]         ; |bloco_operacional|componente_contador:cont1|reg[1]         ; regout           ;        8.0   ; 25.0 ns            ; 0 ps                       ;
+; |bloco_operacional|componente_contador:cont1|reg[2]         ; |bloco_operacional|componente_contador:cont1|reg[2]         ; regout           ;        0.0   ; 0 ps               ; 0 ps                       ;
+; |bloco_operacional|componente_contador:cont1|reg[3]         ; |bloco_operacional|componente_contador:cont1|reg[3]         ; regout           ;        0.0   ; 0 ps               ; 0 ps                       ;
+; |bloco_operacional|componete_comparador2:compa3|LessThan0~0 ; |bloco_operacional|componete_comparador2:compa3|LessThan0~0 ; out0             ;        0.0   ; 1.0 us             ; 0 ps                       ;
+; |bloco_operacional|componete_comparador2:compa3|LessThan0~1 ; |bloco_operacional|componete_comparador2:compa3|LessThan0~1 ; out0             ;        0.0   ; 0 ps               ; 0 ps                       ;
+; |bloco_operacional|componente_comparador:compa2|LessThan0~0 ; |bloco_operacional|componente_comparador:compa2|LessThan0~0 ; out0             ;       36.0   ; 210.0 ns           ; 0 ps                       ;
+; |bloco_operacional|componente_comparador:compa2|LessThan0~1 ; |bloco_operacional|componente_comparador:compa2|LessThan0~1 ; out0             ;       36.0   ; 185.0 ns           ; 0 ps                       ;
+; |bloco_operacional|componente_comparador:compa2|LessThan0~2 ; |bloco_operacional|componente_comparador:compa2|LessThan0~2 ; out0             ;        0.0   ; 0 ps               ; 0 ps                       ;
+; |bloco_operacional|componente_comparador:compa2|LessThan0~3 ; |bloco_operacional|componente_comparador:compa2|LessThan0~3 ; out0             ;        0.0   ; 0 ps               ; 0 ps                       ;
+; |bloco_operacional|componente_contador:cont1|Add0~0         ; |bloco_operacional|componente_contador:cont1|Add0~0         ; out0             ;       36.0   ; 210.0 ns           ; 0 ps                       ;
+; |bloco_operacional|componente_contador:cont1|Add0~1         ; |bloco_operacional|componente_contador:cont1|Add0~1         ; out0             ;        0.0   ; 0 ps               ; 0 ps                       ;
+; |bloco_operacional|componente_contador:cont1|Add0~2         ; |bloco_operacional|componente_contador:cont1|Add0~2         ; out0             ;        0.0   ; 0 ps               ; 0 ps                       ;
+; |bloco_operacional|componente_contador:cont1|Add0~3         ; |bloco_operacional|componente_contador:cont1|Add0~3         ; out0             ;        0.0   ; 0 ps               ; 0 ps                       ;
+; |bloco_operacional|componente_contador:cont1|Add0~4         ; |bloco_operacional|componente_contador:cont1|Add0~4         ; out0             ;        0.0   ; 0 ps               ; 0 ps                       ;
++-------------------------------------------------------------+-------------------------------------------------------------+------------------+--------------+--------------------+----------------------------+
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      36.84 % ;
+; Total nodes checked                                 ; 20           ;
+; Total output ports checked                          ; 19           ;
+; Total output ports with complete 1/0-value coverage ; 7            ;
+; Total output ports with no 1/0-value coverage       ; 12           ;
+; Total output ports with no 1-value coverage         ; 12           ;
+; Total output ports with no 0-value coverage         ; 12           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                  ;
++-------------------------------------------------------------+-------------------------------------------------------------+------------------+
+; Node Name                                                   ; Output Port Name                                            ; Output Port Type ;
++-------------------------------------------------------------+-------------------------------------------------------------+------------------+
+; |bloco_operacional|load_reg                                 ; |bloco_operacional|load_reg                                 ; out              ;
+; |bloco_operacional|clock                                    ; |bloco_operacional|clock                                    ; out              ;
+; |bloco_operacional|clear                                    ; |bloco_operacional|clear                                    ; out              ;
+; |bloco_operacional|componente_contador:cont1|reg[1]         ; |bloco_operacional|componente_contador:cont1|reg[1]         ; regout           ;
+; |bloco_operacional|componente_comparador:compa2|LessThan0~0 ; |bloco_operacional|componente_comparador:compa2|LessThan0~0 ; out0             ;
+; |bloco_operacional|componente_comparador:compa2|LessThan0~1 ; |bloco_operacional|componente_comparador:compa2|LessThan0~1 ; out0             ;
+; |bloco_operacional|componente_contador:cont1|Add0~0         ; |bloco_operacional|componente_contador:cont1|Add0~0         ; out0             ;
++-------------------------------------------------------------+-------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                     ;
++-------------------------------------------------------------+-------------------------------------------------------------+------------------+
+; Node Name                                                   ; Output Port Name                                            ; Output Port Type ;
++-------------------------------------------------------------+-------------------------------------------------------------+------------------+
+; |bloco_operacional|comp                                     ; |bloco_operacional|comp                                     ; pin_out          ;
+; |bloco_operacional|compdois                                 ; |bloco_operacional|compdois                                 ; pin_out          ;
+; |bloco_operacional|componente_contador:cont1|reg[2]         ; |bloco_operacional|componente_contador:cont1|reg[2]         ; regout           ;
+; |bloco_operacional|componente_contador:cont1|reg[3]         ; |bloco_operacional|componente_contador:cont1|reg[3]         ; regout           ;
+; |bloco_operacional|componete_comparador2:compa3|LessThan0~0 ; |bloco_operacional|componete_comparador2:compa3|LessThan0~0 ; out0             ;
+; |bloco_operacional|componete_comparador2:compa3|LessThan0~1 ; |bloco_operacional|componete_comparador2:compa3|LessThan0~1 ; out0             ;
+; |bloco_operacional|componente_comparador:compa2|LessThan0~2 ; |bloco_operacional|componente_comparador:compa2|LessThan0~2 ; out0             ;
+; |bloco_operacional|componente_comparador:compa2|LessThan0~3 ; |bloco_operacional|componente_comparador:compa2|LessThan0~3 ; out0             ;
+; |bloco_operacional|componente_contador:cont1|Add0~1         ; |bloco_operacional|componente_contador:cont1|Add0~1         ; out0             ;
+; |bloco_operacional|componente_contador:cont1|Add0~2         ; |bloco_operacional|componente_contador:cont1|Add0~2         ; out0             ;
+; |bloco_operacional|componente_contador:cont1|Add0~3         ; |bloco_operacional|componente_contador:cont1|Add0~3         ; out0             ;
+; |bloco_operacional|componente_contador:cont1|Add0~4         ; |bloco_operacional|componente_contador:cont1|Add0~4         ; out0             ;
++-------------------------------------------------------------+-------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                     ;
++-------------------------------------------------------------+-------------------------------------------------------------+------------------+
+; Node Name                                                   ; Output Port Name                                            ; Output Port Type ;
++-------------------------------------------------------------+-------------------------------------------------------------+------------------+
+; |bloco_operacional|comp                                     ; |bloco_operacional|comp                                     ; pin_out          ;
+; |bloco_operacional|compdois                                 ; |bloco_operacional|compdois                                 ; pin_out          ;
+; |bloco_operacional|componente_contador:cont1|reg[2]         ; |bloco_operacional|componente_contador:cont1|reg[2]         ; regout           ;
+; |bloco_operacional|componente_contador:cont1|reg[3]         ; |bloco_operacional|componente_contador:cont1|reg[3]         ; regout           ;
+; |bloco_operacional|componete_comparador2:compa3|LessThan0~0 ; |bloco_operacional|componete_comparador2:compa3|LessThan0~0 ; out0             ;
+; |bloco_operacional|componete_comparador2:compa3|LessThan0~1 ; |bloco_operacional|componete_comparador2:compa3|LessThan0~1 ; out0             ;
+; |bloco_operacional|componente_comparador:compa2|LessThan0~2 ; |bloco_operacional|componente_comparador:compa2|LessThan0~2 ; out0             ;
+; |bloco_operacional|componente_comparador:compa2|LessThan0~3 ; |bloco_operacional|componente_comparador:compa2|LessThan0~3 ; out0             ;
+; |bloco_operacional|componente_contador:cont1|Add0~1         ; |bloco_operacional|componente_contador:cont1|Add0~1         ; out0             ;
+; |bloco_operacional|componente_contador:cont1|Add0~2         ; |bloco_operacional|componente_contador:cont1|Add0~2         ; out0             ;
+; |bloco_operacional|componente_contador:cont1|Add0~3         ; |bloco_operacional|componente_contador:cont1|Add0~3         ; out0             ;
+; |bloco_operacional|componente_contador:cont1|Add0~4         ; |bloco_operacional|componente_contador:cont1|Add0~4         ; out0             ;
++-------------------------------------------------------------+-------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 132 02/25/2009 SJ Web Edition
+    Info: Processing started: Sun Jun 16 12:01:20 2013
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off bloco_operacional -c bloco_operacional
+Info: Using vector source file "../componente_contador/bloco_operacional.vwf"
+Info: Overwriting simulation input file with simulation results
+    Info: A backup of bloco_operacional.vwf called bloco_operacional.sim_ori.vwf has been created in the db folder
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Warning: Found clock-sensitive change during active clock edge at time 115.0 ns on register "|bloco_operacional|componente_contador:cont1|reg[0]"
+Warning: Found clock-sensitive change during active clock edge at time 115.0 ns on register "|bloco_operacional|componente_contador:cont1|reg[1]"
+Info: Simulation partitioned into 1 sub-simulations
+Info: Created Signal Activity File C:/Users/heliojunior/Desktop/Projeto/bloco_operacional/bloco_operacional.saf
+Info: Simulation coverage is      36.84 %
+Info: Number of transitions in simulation is 546
+Info: Vector file bloco_operacional.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II Simulator was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 154 megabytes
+    Info: Processing ended: Sun Jun 16 12:01:20 2013
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

@@ -1,0 +1,577 @@
+Simulator report for bloco_controle
+Sun Jun 16 02:02:11 2013
+Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 103 nodes    ;
+; Simulation Coverage         ;      95.45 % ;
+; Total Number of Transitions ; 15871        ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Stratix II   ;
++-----------------------------+--------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                              ;
++--------------------------------------------------------------------------------------------+--------------------+---------------+
+; Option                                                                                     ; Setting            ; Default Value ;
++--------------------------------------------------------------------------------------------+--------------------+---------------+
+; Simulation mode                                                                            ; Functional         ; Timing        ;
+; Start time                                                                                 ; 0 ns               ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF               ;               ;
+; Vector input source                                                                        ; bloco_controle.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                 ; On            ;
+; Check outputs                                                                              ; Off                ; Off           ;
+; Report simulation coverage                                                                 ; On                 ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                 ; On            ;
+; Display missing 1-value coverage report                                                    ; On                 ; On            ;
+; Display missing 0-value coverage report                                                    ; On                 ; On            ;
+; Detect setup and hold time violations                                                      ; Off                ; Off           ;
+; Detect glitches                                                                            ; Off                ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                ; Off           ;
+; Generate Signal Activity File                                                              ; Off                ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                 ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE         ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto               ; Auto          ;
++--------------------------------------------------------------------------------------------+--------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      95.45 % ;
+; Total nodes checked                                 ; 103          ;
+; Total output ports checked                          ; 110          ;
+; Total output ports with complete 1/0-value coverage ; 105          ;
+; Total output ports with no 1/0-value coverage       ; 5            ;
+; Total output ports with no 1-value coverage         ; 5            ;
+; Total output ports with no 0-value coverage         ; 5            ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                      ;
++-----------------------------------------------+-----------------------------------------------+------------------+
+; Node Name                                     ; Output Port Name                              ; Output Port Type ;
++-----------------------------------------------+-----------------------------------------------+------------------+
+; |bloco_controle|process_0~0                   ; |bloco_controle|process_0~0                   ; out0             ;
+; |bloco_controle|process_0~1                   ; |bloco_controle|process_0~1                   ; out0             ;
+; |bloco_controle|process_0~2                   ; |bloco_controle|process_0~2                   ; out0             ;
+; |bloco_controle|process_0~3                   ; |bloco_controle|process_0~3                   ; out0             ;
+; |bloco_controle|process_0~4                   ; |bloco_controle|process_0~4                   ; out0             ;
+; |bloco_controle|process_0~5                   ; |bloco_controle|process_0~5                   ; out0             ;
+; |bloco_controle|estado_seguinte.INICIAR~0     ; |bloco_controle|estado_seguinte.INICIAR~0     ; out              ;
+; |bloco_controle|estado_seguinte.LIGA~0        ; |bloco_controle|estado_seguinte.LIGA~0        ; out              ;
+; |bloco_controle|estado_atual.INICIAR          ; |bloco_controle|estado_atual.INICIAR          ; regout           ;
+; |bloco_controle|estado_atual.RESULTADO        ; |bloco_controle|estado_atual.RESULTADO        ; regout           ;
+; |bloco_controle|estado_atual.CONTADOR1        ; |bloco_controle|estado_atual.CONTADOR1        ; regout           ;
+; |bloco_controle|WideOr0                       ; |bloco_controle|WideOr0                       ; out0             ;
+; |bloco_controle|estado_atual.LIGA             ; |bloco_controle|estado_atual.LIGA             ; regout           ;
+; |bloco_controle|clr_r~0                       ; |bloco_controle|clr_r~0                       ; out0             ;
+; |bloco_controle|estado_atual.CONTADOR2        ; |bloco_controle|estado_atual.CONTADOR2        ; regout           ;
+; |bloco_controle|load_r~0                      ; |bloco_controle|load_r~0                      ; out0             ;
+; |bloco_controle|WideOr1                       ; |bloco_controle|WideOr1                       ; out0             ;
+; |bloco_controle|estado_teste~0                ; |bloco_controle|estado_teste~0                ; out0             ;
+; |bloco_controle|WideOr3                       ; |bloco_controle|WideOr3                       ; out0             ;
+; |bloco_controle|comb~0                        ; |bloco_controle|comb~0                        ; out0             ;
+; |bloco_controle|comb~1                        ; |bloco_controle|comb~1                        ; out0             ;
+; |bloco_controle|comb~2                        ; |bloco_controle|comb~2                        ; out0             ;
+; |bloco_controle|comb~3                        ; |bloco_controle|comb~3                        ; out0             ;
+; |bloco_controle|comb~6                        ; |bloco_controle|comb~6                        ; out0             ;
+; |bloco_controle|estado_teste[1]               ; |bloco_controle|estado_teste[1]               ; out              ;
+; |bloco_controle|estado_teste[2]               ; |bloco_controle|estado_teste[2]               ; out              ;
+; |bloco_controle|estado_seguinte.CONTADOR2_243 ; |bloco_controle|estado_seguinte.CONTADOR2_243 ; out              ;
+; |bloco_controle|estado_seguinte.CONTADOR2~0   ; |bloco_controle|estado_seguinte.CONTADOR2~0   ; out0             ;
+; |bloco_controle|estado_seguinte.CONTADOR2~1   ; |bloco_controle|estado_seguinte.CONTADOR2~1   ; out0             ;
+; |bloco_controle|estado_seguinte.CONTADOR2~2   ; |bloco_controle|estado_seguinte.CONTADOR2~2   ; out0             ;
+; |bloco_controle|estado_seguinte.CONTADOR2~3   ; |bloco_controle|estado_seguinte.CONTADOR2~3   ; out0             ;
+; |bloco_controle|estado_seguinte.CONTADOR2~4   ; |bloco_controle|estado_seguinte.CONTADOR2~4   ; out0             ;
+; |bloco_controle|estado_seguinte.LIGA_269      ; |bloco_controle|estado_seguinte.LIGA_269      ; out              ;
+; |bloco_controle|estado_seguinte.CONTADOR1_295 ; |bloco_controle|estado_seguinte.CONTADOR1_295 ; out              ;
+; |bloco_controle|estado_seguinte.RESULTADO_321 ; |bloco_controle|estado_seguinte.RESULTADO_321 ; out              ;
+; |bloco_controle|estado_seguinte.RESULTADO~0   ; |bloco_controle|estado_seguinte.RESULTADO~0   ; out              ;
+; |bloco_controle|estado_seguinte.RESULTADO~1   ; |bloco_controle|estado_seguinte.RESULTADO~1   ; out              ;
+; |bloco_controle|estado_seguinte.SLOW_347      ; |bloco_controle|estado_seguinte.SLOW_347      ; out              ;
+; |bloco_controle|estado_seguinte.SLOW~0        ; |bloco_controle|estado_seguinte.SLOW~0        ; out              ;
+; |bloco_controle|estado_seguinte.INICIAR_373   ; |bloco_controle|estado_seguinte.INICIAR_373   ; out              ;
+; |bloco_controle|estado_seguinte.INICIAR~1     ; |bloco_controle|estado_seguinte.INICIAR~1     ; out              ;
+; |bloco_controle|estado_seguinte.INICIAR~2     ; |bloco_controle|estado_seguinte.INICIAR~2     ; out              ;
+; |bloco_controle|estado_teste[0]               ; |bloco_controle|estado_teste[0]               ; out              ;
+; |bloco_controle|clk                           ; |bloco_controle|clk                           ; out              ;
+; |bloco_controle|clk                           ; |bloco_controle|clk~result                    ; pin_out          ;
+; |bloco_controle|clr_r                         ; |bloco_controle|clr_r                         ; out              ;
+; |bloco_controle|clr_r                         ; |bloco_controle|clr_r~result                  ; pin_out          ;
+; |bloco_controle|load_r                        ; |bloco_controle|load_r                        ; out              ;
+; |bloco_controle|load_r                        ; |bloco_controle|load_r~result                 ; pin_out          ;
+; |bloco_controle|comp                          ; |bloco_controle|comp                          ; out              ;
+; |bloco_controle|comp                          ; |bloco_controle|comp~result                   ; pin_out          ;
+; |bloco_controle|comp2                         ; |bloco_controle|comp2                         ; out              ;
+; |bloco_controle|comp2                         ; |bloco_controle|comp2~result                  ; pin_out          ;
+; |bloco_controle|rst                           ; |bloco_controle|rst                           ; out              ;
+; |bloco_controle|rst                           ; |bloco_controle|rst~result                    ; pin_out          ;
+; |bloco_controle|b                             ; |bloco_controle|b                             ; out              ;
+; |bloco_controle|b                             ; |bloco_controle|b~result                      ; pin_out          ;
+; |bloco_controle|len                           ; |bloco_controle|len                           ; pin_out          ;
+; |bloco_controle|estado[0]                     ; |bloco_controle|estado[0]                     ; pin_out          ;
+; |bloco_controle|estado[1]                     ; |bloco_controle|estado[1]                     ; pin_out          ;
+; |bloco_controle|estado[2]                     ; |bloco_controle|estado[2]                     ; pin_out          ;
+; |bloco_controle|clk~0                         ; |bloco_controle|clk~0                         ; out0             ;
+; |bloco_controle|clr_r~1                       ; |bloco_controle|clr_r~1                       ; out0             ;
+; |bloco_controle|load_r~1                      ; |bloco_controle|load_r~1                      ; out0             ;
+; |bloco_controle|comp~0                        ; |bloco_controle|comp~0                        ; out0             ;
+; |bloco_controle|comp2~0                       ; |bloco_controle|comp2~0                       ; out0             ;
+; |bloco_controle|rst~0                         ; |bloco_controle|rst~0                         ; out0             ;
+; |bloco_controle|b~0                           ; |bloco_controle|b~0                           ; out0             ;
+; |bloco_controle|estado_atual~0                ; |bloco_controle|estado_atual~0                ; out0             ;
+; |bloco_controle|estado_atual.INICIAR~0        ; |bloco_controle|estado_atual.INICIAR~0        ; out0             ;
+; |bloco_controle|Selector0~0                   ; |bloco_controle|Selector0~0                   ; out0             ;
+; |bloco_controle|estado_atual.SLOW~0           ; |bloco_controle|estado_atual.SLOW~0           ; out0             ;
+; |bloco_controle|estado_atual.RESULTADO~0      ; |bloco_controle|estado_atual.RESULTADO~0      ; out0             ;
+; |bloco_controle|Selector0~1                   ; |bloco_controle|Selector0~1                   ; out0             ;
+; |bloco_controle|estado_atual.CONTADOR1~0      ; |bloco_controle|estado_atual.CONTADOR1~0      ; out0             ;
+; |bloco_controle|Selector0~2                   ; |bloco_controle|Selector0~2                   ; out0             ;
+; |bloco_controle|estado_atual.LIGA~0           ; |bloco_controle|estado_atual.LIGA~0           ; out0             ;
+; |bloco_controle|Selector0~3                   ; |bloco_controle|Selector0~3                   ; out0             ;
+; |bloco_controle|estado_atual.CONTADOR2~0      ; |bloco_controle|estado_atual.CONTADOR2~0      ; out0             ;
+; |bloco_controle|Selector0~4                   ; |bloco_controle|Selector0~4                   ; out0             ;
+; |bloco_controle|Selector0~5                   ; |bloco_controle|Selector0~5                   ; out0             ;
+; |bloco_controle|Selector0~6                   ; |bloco_controle|Selector0~6                   ; out0             ;
+; |bloco_controle|Selector0~8                   ; |bloco_controle|Selector0~8                   ; out0             ;
+; |bloco_controle|Selector0~9                   ; |bloco_controle|Selector0~9                   ; out0             ;
+; |bloco_controle|Selector0~10                  ; |bloco_controle|Selector0~10                  ; out0             ;
+; |bloco_controle|Selector1~0                   ; |bloco_controle|Selector1~0                   ; out0             ;
+; |bloco_controle|Selector1~2                   ; |bloco_controle|Selector1~2                   ; out0             ;
+; |bloco_controle|Selector2~0                   ; |bloco_controle|Selector2~0                   ; out0             ;
+; |bloco_controle|Selector2~1                   ; |bloco_controle|Selector2~1                   ; out0             ;
+; |bloco_controle|Selector2~2                   ; |bloco_controle|Selector2~2                   ; out0             ;
+; |bloco_controle|Selector3~0                   ; |bloco_controle|Selector3~0                   ; out0             ;
+; |bloco_controle|Selector3~1                   ; |bloco_controle|Selector3~1                   ; out0             ;
+; |bloco_controle|Selector4~0                   ; |bloco_controle|Selector4~0                   ; out0             ;
+; |bloco_controle|Selector6~0                   ; |bloco_controle|Selector6~0                   ; out0             ;
+; |bloco_controle|Selector8~0                   ; |bloco_controle|Selector8~0                   ; out0             ;
+; |bloco_controle|Selector10~0                  ; |bloco_controle|Selector10~0                  ; out0             ;
+; |bloco_controle|Selector11~0                  ; |bloco_controle|Selector11~0                  ; out0             ;
+; |bloco_controle|Selector11~1                  ; |bloco_controle|Selector11~1                  ; out0             ;
+; |bloco_controle|Selector11~2                  ; |bloco_controle|Selector11~2                  ; out0             ;
+; |bloco_controle|Selector12~0                  ; |bloco_controle|Selector12~0                  ; out0             ;
+; |bloco_controle|Selector12~1                  ; |bloco_controle|Selector12~1                  ; out0             ;
+; |bloco_controle|Selector12~2                  ; |bloco_controle|Selector12~2                  ; out0             ;
+; |bloco_controle|Selector13~0                  ; |bloco_controle|Selector13~0                  ; out0             ;
+; |bloco_controle|Selector13~1                  ; |bloco_controle|Selector13~1                  ; out0             ;
+; |bloco_controle|Selector13~2                  ; |bloco_controle|Selector13~2                  ; out0             ;
++-----------------------------------------------+-----------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                 ;
++-----------------------------------+-----------------------------------+------------------+
+; Node Name                         ; Output Port Name                  ; Output Port Type ;
++-----------------------------------+-----------------------------------+------------------+
+; |bloco_controle|estado_atual.SLOW ; |bloco_controle|estado_atual.SLOW ; regout           ;
+; |bloco_controle|lento             ; |bloco_controle|lento             ; pin_out          ;
+; |bloco_controle|process_0~6       ; |bloco_controle|process_0~6       ; out0             ;
+; |bloco_controle|Selector0~7       ; |bloco_controle|Selector0~7       ; out0             ;
+; |bloco_controle|Selector1~1       ; |bloco_controle|Selector1~1       ; out0             ;
++-----------------------------------+-----------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                 ;
++-----------------------------------+-----------------------------------+------------------+
+; Node Name                         ; Output Port Name                  ; Output Port Type ;
++-----------------------------------+-----------------------------------+------------------+
+; |bloco_controle|estado_atual.SLOW ; |bloco_controle|estado_atual.SLOW ; regout           ;
+; |bloco_controle|lento             ; |bloco_controle|lento             ; pin_out          ;
+; |bloco_controle|process_0~6       ; |bloco_controle|process_0~6       ; out0             ;
+; |bloco_controle|Selector0~7       ; |bloco_controle|Selector0~7       ; out0             ;
+; |bloco_controle|Selector1~1       ; |bloco_controle|Selector1~1       ; out0             ;
++-----------------------------------+-----------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 132 02/25/2009 SJ Web Edition
+    Info: Processing started: Sun Jun 16 02:02:10 2013
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off bloco_controle -c bloco_controle
+Info: Using vector source file "C:/Users/heliojunior/Desktop/Projeto/bloco_controle/bloco_controle.vwf"
+Warning: Found logic contention at time 0 ps on bus node "|bloco_controle|load_r~1"
+    Info: Node "load_r~0" has logic level of 0
+    Info: Node "load_r" has logic level of 1
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Warning: Found logic contention at time 5.0 ns on bus node "|bloco_controle|clr_r~1"
+    Info: Node "clr_r~0" has logic level of 0
+    Info: Node "clr_r" has logic level of 1
+Warning: Found logic contention at time 5.0 ns on bus node "|bloco_controle|load_r~1"
+    Info: Node "load_r~0" has logic level of 1
+    Info: Node "load_r" has logic level of 0
+Warning: Found logic contention at time 13.5 ns on bus node "|bloco_controle|load_r~1"
+    Info: Node "load_r~0" has logic level of 1
+    Info: Node "load_r" has logic level of 0
+Warning: Found logic contention at time 15.69 ns on bus node "|bloco_controle|clr_r~1"
+    Info: Node "clr_r~0" has logic level of 0
+    Info: Node "clr_r" has logic level of 1
+Warning: Found logic contention at time 22.93 ns on bus node "|bloco_controle|clr_r~1"
+    Info: Node "clr_r~0" has logic level of 0
+    Info: Node "clr_r" has logic level of 1
+Warning: Found logic contention at time 23.23 ns on bus node "|bloco_controle|load_r~1"
+    Info: Node "load_r~0" has logic level of 1
+    Info: Node "load_r" has logic level of 0
+Warning: Found logic contention at time 29.59 ns on bus node "|bloco_controle|clr_r~1"
+    Info: Node "clr_r~0" has logic level of 0
+    Info: Node "clr_r" has logic level of 1
+Warning: Found logic contention at time 35.0 ns on bus node "|bloco_controle|clr_r~1"
+    Info: Node "clr_r~0" has logic level of 1
+    Info: Node "clr_r" has logic level of 0
+Warning: Found logic contention at time 35.0 ns on bus node "|bloco_controle|load_r~1"
+    Info: Node "load_r~0" has logic level of 0
+    Info: Node "load_r" has logic level of 1
+Warning: Found logic contention at time 38.59 ns on bus node "|bloco_controle|clr_r~1"
+    Info: Node "clr_r~0" has logic level of 1
+    Info: Node "clr_r" has logic level of 0
+Warning: Found logic contention at time 45.0 ns on bus node "|bloco_controle|load_r~1"
+    Info: Node "load_r~0" has logic level of 1
+    Info: Node "load_r" has logic level of 0
+Warning: Found logic contention at time 46.49 ns on bus node "|bloco_controle|clr_r~1"
+    Info: Node "clr_r~0" has logic level of 0
+    Info: Node "clr_r" has logic level of 1
+Warning: Found logic contention at time 50.0 ns on bus node "|bloco_controle|load_r~1"
+    Info: Node "load_r~0" has logic level of 1
+    Info: Node "load_r" has logic level of 0
+Warning: Found logic contention at time 50.3 ns on bus node "|bloco_controle|clr_r~1"
+    Info: Node "clr_r~0" has logic level of 0
+    Info: Node "clr_r" has logic level of 1
+Warning: Found logic contention at time 55.0 ns on bus node "|bloco_controle|clr_r~1"
+    Info: Node "clr_r~0" has logic level of 1
+    Info: Node "clr_r" has logic level of 0
+Warning: Found logic contention at time 55.83 ns on bus node "|bloco_controle|load_r~1"
+    Info: Node "load_r~0" has logic level of 0
+    Info: Node "load_r" has logic level of 1
+Warning: Found logic contention at time 63.65 ns on bus node "|bloco_controle|load_r~1"
+    Info: Node "load_r~0" has logic level of 0
+    Info: Node "load_r" has logic level of 1
+Warning: Found logic contention at time 64.1 ns on bus node "|bloco_controle|clr_r~1"
+    Info: Node "clr_r~0" has logic level of 1
+    Info: Node "clr_r" has logic level of 0
+Warning: Found logic contention at time 66.31 ns on bus node "|bloco_controle|load_r~1"
+    Info: Node "load_r~0" has logic level of 1
+    Info: Node "load_r" has logic level of 0
+Warning: Found logic contention at time 71.65 ns on bus node "|bloco_controle|clr_r~1"
+    Info: Node "clr_r~0" has logic level of 0
+    Info: Node "clr_r" has logic level of 1
+Warning: Found logic contention at time 72.98 ns on bus node "|bloco_controle|load_r~1"
+    Info: Node "load_r~0" has logic level of 1
+    Info: Node "load_r" has logic level of 0
+Warning: Found logic contention at time 75.05 ns on bus node "|bloco_controle|clr_r~1"
+    Info: Node "clr_r~0" has logic level of 1
+    Info: Node "clr_r" has logic level of 0
+Warning: Found logic contention at time 76.98 ns on bus node "|bloco_controle|load_r~1"
+    Info: Node "load_r~0" has logic level of 0
+    Info: Node "load_r" has logic level of 1
+Warning: Found logic contention at time 80.0 ns on bus node "|bloco_controle|load_r~1"
+    Info: Node "load_r~0" has logic level of 0
+    Info: Node "load_r" has logic level of 1
+Warning: Found logic contention at time 83.49 ns on bus node "|bloco_controle|load_r~1"
+    Info: Node "load_r~0" has logic level of 0
+    Info: Node "load_r" has logic level of 1
+Warning: Found logic contention at time 85.0 ns on bus node "|bloco_controle|clr_r~1"
+    Info: Node "clr_r~0" has logic level of 0
+    Info: Node "clr_r" has logic level of 1
+Warning: Found logic contention at time 85.04 ns on bus node "|bloco_controle|load_r~1"
+    Info: Node "load_r~0" has logic level of 1
+    Info: Node "load_r" has logic level of 0
+Warning: Found logic contention at time 90.47 ns on bus node "|bloco_controle|load_r~1"
+    Info: Node "load_r~0" has logic level of 1
+    Info: Node "load_r" has logic level of 0
+Warning: Found logic contention at time 93.81 ns on bus node "|bloco_controle|load_r~1"
+    Info: Node "load_r~0" has logic level of 1
+    Info: Node "load_r" has logic level of 0
+Warning: Found logic contention at time 95.0 ns on bus node "|bloco_controle|clr_r~1"
+    Info: Node "clr_r~0" has logic level of 1
+    Info: Node "clr_r" has logic level of 0
+Warning: Found logic contention at time 95.54 ns on bus node "|bloco_controle|load_r~1"
+    Info: Node "load_r~0" has logic level of 0
+    Info: Node "load_r" has logic level of 1
+Warning: Found logic contention at time 98.87 ns on bus node "|bloco_controle|load_r~1"
+    Info: Node "load_r~0" has logic level of 0
+    Info: Node "load_r" has logic level of 1
+Warning: Found logic contention at time 102.02 ns on bus node "|bloco_controle|load_r~1"
+    Info: Node "load_r~0" has logic level of 0
+    Info: Node "load_r" has logic level of 1
+Warning: Found logic contention at time 105.0 ns on bus node "|bloco_controle|clr_r~1"
+    Info: Node "clr_r~0" has logic level of 0
+    Info: Node "clr_r" has logic level of 1
+Warning: Found logic contention at time 105.0 ns on bus node "|bloco_controle|load_r~1"
+    Info: Node "load_r~0" has logic level of 1
+    Info: Node "load_r" has logic level of 0
+Warning: Found logic contention at time 106.39 ns on bus node "|bloco_controle|load_r~1"
+    Info: Node "load_r~0" has logic level of 1
+    Info: Node "load_r" has logic level of 0
+Warning: Found logic contention at time 109.72 ns on bus node "|bloco_controle|load_r~1"
+    Info: Node "load_r~0" has logic level of 1
+    Info: Node "load_r" has logic level of 0
+Warning: Found logic contention at time 115.0 ns on bus node "|bloco_controle|load_r~1"
+    Info: Node "load_r~0" has logic level of 0
+    Info: Node "load_r" has logic level of 1
+Warning: Found logic contention at time 115.0 ns on bus node "|bloco_controle|clr_r~1"
+    Info: Node "clr_r~0" has logic level of 1
+    Info: Node "clr_r" has logic level of 0
+Warning: Found logic contention at time 120.59 ns on bus node "|bloco_controle|clr_r~1"
+    Info: Node "clr_r~0" has logic level of 1
+    Info: Node "clr_r" has logic level of 0
+Warning: Found logic contention at time 125.59 ns on bus node "|bloco_controle|clr_r~1"
+    Info: Node "clr_r~0" has logic level of 1
+    Info: Node "clr_r" has logic level of 0
+Warning: Found logic contention at time 130.0 ns on bus node "|bloco_controle|clr_r~1"
+    Info: Node "clr_r~0" has logic level of 1
+    Info: Node "clr_r" has logic level of 0
+Warning: Found logic contention at time 130.75 ns on bus node "|bloco_controle|load_r~1"
+    Info: Node "load_r~0" has logic level of 0
+    Info: Node "load_r" has logic level of 1
+Warning: Found logic contention at time 134.08 ns on bus node "|bloco_controle|load_r~1"
+    Info: Node "load_r~0" has logic level of 0
+    Info: Node "load_r" has logic level of 1
+Warning: Found logic contention at time 135.0 ns on bus node "|bloco_controle|clr_r~1"
+    Info: Node "clr_r~0" has logic level of 0
+    Info: Node "clr_r" has logic level of 1
+Warning: Found logic contention at time 135.71 ns on bus node "|bloco_controle|load_r~1"
+    Info: Node "load_r~0" has logic level of 1
+    Info: Node "load_r" has logic level of 0
+Warning: Found logic contention at time 139.04 ns on bus node "|bloco_controle|load_r~1"
+    Info: Node "load_r~0" has logic level of 1
+    Info: Node "load_r" has logic level of 0
+Warning: Found logic contention at time 142.93 ns on bus node "|bloco_controle|load_r~1"
+    Info: Node "load_r~0" has logic level of 1
+    Info: Node "load_r" has logic level of 0
+Warning: Found logic contention at time 143.24 ns on bus node "|bloco_controle|clr_r~1"
+    Info: Node "clr_r~0" has logic level of 0
+    Info: Node "clr_r" has logic level of 1
+Warning: Found logic contention at time 145.53 ns on bus node "|bloco_controle|load_r~1"
+    Info: Node "load_r~0" has logic level of 0
+    Info: Node "load_r" has logic level of 1
+Warning: Found logic contention at time 148.14 ns on bus node "|bloco_controle|clr_r~1"
+    Info: Node "clr_r~0" has logic level of 1
+    Info: Node "clr_r" has logic level of 0
+Warning: Found logic contention at time 151.13 ns on bus node "|bloco_controle|clr_r~1"
+    Info: Node "clr_r~0" has logic level of 1
+    Info: Node "clr_r" has logic level of 0
+Warning: Found logic contention at time 154.99 ns on bus node "|bloco_controle|load_r~1"
+    Info: Node "load_r~0" has logic level of 0
+    Info: Node "load_r" has logic level of 1
+Warning: Found logic contention at time 155.0 ns on bus node "|bloco_controle|clr_r~1"
+    Info: Node "clr_r~0" has logic level of 0
+    Info: Node "clr_r" has logic level of 1
+Warning: Found logic contention at time 158.88 ns on bus node "|bloco_controle|clr_r~1"
+    Info: Node "clr_r~0" has logic level of 0
+    Info: Node "clr_r" has logic level of 1
+Warning: Found logic contention at time 161.39 ns on bus node "|bloco_controle|load_r~1"
+    Info: Node "load_r~0" has logic level of 1
+    Info: Node "load_r" has logic level of 0
+Warning: Found logic contention at time 165.0 ns on bus node "|bloco_controle|clr_r~1"
+    Info: Node "clr_r~0" has logic level of 1
+    Info: Node "clr_r" has logic level of 0
+Warning: Found logic contention at time 170.53 ns on bus node "|bloco_controle|load_r~1"
+    Info: Node "load_r~0" has logic level of 0
+    Info: Node "load_r" has logic level of 1
+Warning: Found logic contention at time 174.03 ns on bus node "|bloco_controle|clr_r~1"
+    Info: Node "clr_r~0" has logic level of 1
+    Info: Node "clr_r" has logic level of 0
+Warning: Found logic contention at time 175.0 ns on bus node "|bloco_controle|load_r~1"
+    Info: Node "load_r~0" has logic level of 1
+    Info: Node "load_r" has logic level of 0
+Warning: Found logic contention at time 177.83 ns on bus node "|bloco_controle|load_r~1"
+    Info: Node "load_r~0" has logic level of 1
+    Info: Node "load_r" has logic level of 0
+Warning: Found logic contention at time 179.63 ns on bus node "|bloco_controle|clr_r~1"
+    Info: Node "clr_r~0" has logic level of 0
+    Info: Node "clr_r" has logic level of 1
+Warning: Found logic contention at time 180.58 ns on bus node "|bloco_controle|clr_r~1"
+    Info: Node "clr_r~0" has logic level of 0
+    Info: Node "clr_r" has logic level of 1
+Warning: Found logic contention at time 180.83 ns on bus node "|bloco_controle|load_r~1"
+    Info: Node "load_r~0" has logic level of 1
+    Info: Node "load_r" has logic level of 0
+Warning: Found logic contention at time 184.16 ns on bus node "|bloco_controle|load_r~1"
+    Info: Node "load_r~0" has logic level of 1
+    Info: Node "load_r" has logic level of 0
+Warning: Found logic contention at time 187.49 ns on bus node "|bloco_controle|load_r~1"
+    Info: Node "load_r~0" has logic level of 1
+    Info: Node "load_r" has logic level of 0
+Warning: Found logic contention at time 191.58 ns on bus node "|bloco_controle|load_r~1"
+    Info: Node "load_r~0" has logic level of 1
+    Info: Node "load_r" has logic level of 0
+Warning: Found logic contention at time 195.98 ns on bus node "|bloco_controle|load_r~1"
+    Info: Node "load_r~0" has logic level of 0
+    Info: Node "load_r" has logic level of 1
+Warning: Found logic contention at time 200.0 ns on bus node "|bloco_controle|clr_r~1"
+    Info: Node "clr_r~0" has logic level of 0
+    Info: Node "clr_r" has logic level of 1
+Warning: Found logic contention at time 202.64 ns on bus node "|bloco_controle|load_r~1"
+    Info: Node "load_r~0" has logic level of 0
+    Info: Node "load_r" has logic level of 1
+Warning: Found logic contention at time 203.28 ns on bus node "|bloco_controle|clr_r~1"
+    Info: Node "clr_r~0" has logic level of 0
+    Info: Node "clr_r" has logic level of 1
+Warning: Found logic contention at time 206.61 ns on bus node "|bloco_controle|clr_r~1"
+    Info: Node "clr_r~0" has logic level of 0
+    Info: Node "clr_r" has logic level of 1
+Warning: Found logic contention at time 209.31 ns on bus node "|bloco_controle|load_r~1"
+    Info: Node "load_r~0" has logic level of 0
+    Info: Node "load_r" has logic level of 1
+Warning: Found logic contention at time 209.94 ns on bus node "|bloco_controle|clr_r~1"
+    Info: Node "clr_r~0" has logic level of 0
+    Info: Node "clr_r" has logic level of 1
+Warning: Found logic contention at time 215.0 ns on bus node "|bloco_controle|clr_r~1"
+    Info: Node "clr_r~0" has logic level of 1
+    Info: Node "clr_r" has logic level of 0
+Warning: Found logic contention at time 216.33 ns on bus node "|bloco_controle|load_r~1"
+    Info: Node "load_r~0" has logic level of 0
+    Info: Node "load_r" has logic level of 1
+Warning: Found logic contention at time 222.65 ns on bus node "|bloco_controle|load_r~1"
+    Info: Node "load_r~0" has logic level of 0
+    Info: Node "load_r" has logic level of 1
+Warning: Found logic contention at time 225.0 ns on bus node "|bloco_controle|clr_r~1"
+    Info: Node "clr_r~0" has logic level of 0
+    Info: Node "clr_r" has logic level of 1
+Warning: Found logic contention at time 225.0 ns on bus node "|bloco_controle|load_r~1"
+    Info: Node "load_r~0" has logic level of 1
+    Info: Node "load_r" has logic level of 0
+Warning: Found logic contention at time 227.55 ns on bus node "|bloco_controle|load_r~1"
+    Info: Node "load_r~0" has logic level of 1
+    Info: Node "load_r" has logic level of 0
+Warning: Found logic contention at time 230.0 ns on bus node "|bloco_controle|load_r~1"
+    Info: Node "load_r~0" has logic level of 1
+    Info: Node "load_r" has logic level of 0
+Warning: Found logic contention at time 233.05 ns on bus node "|bloco_controle|clr_r~1"
+    Info: Node "clr_r~0" has logic level of 0
+    Info: Node "clr_r" has logic level of 1
+Warning: Found logic contention at time 235.0 ns on bus node "|bloco_controle|load_r~1"
+    Info: Node "load_r~0" has logic level of 0
+    Info: Node "load_r" has logic level of 1
+Warning: Found logic contention at time 235.39 ns on bus node "|bloco_controle|clr_r~1"
+    Info: Node "clr_r~0" has logic level of 1
+    Info: Node "clr_r" has logic level of 0
+Warning: Found logic contention at time 239.47 ns on bus node "|bloco_controle|load_r~1"
+    Info: Node "load_r~0" has logic level of 0
+    Info: Node "load_r" has logic level of 1
+Warning: Found logic contention at time 242.05 ns on bus node "|bloco_controle|clr_r~1"
+    Info: Node "clr_r~0" has logic level of 1
+    Info: Node "clr_r" has logic level of 0
+Warning: Found logic contention at time 245.0 ns on bus node "|bloco_controle|load_r~1"
+    Info: Node "load_r~0" has logic level of 1
+    Info: Node "load_r" has logic level of 0
+Warning: Found logic contention at time 246.39 ns on bus node "|bloco_controle|clr_r~1"
+    Info: Node "clr_r~0" has logic level of 0
+    Info: Node "clr_r" has logic level of 1
+Warning: Found logic contention at time 249.26 ns on bus node "|bloco_controle|load_r~1"
+    Info: Node "load_r~0" has logic level of 1
+    Info: Node "load_r" has logic level of 0
+Warning: Found logic contention at time 250.12 ns on bus node "|bloco_controle|clr_r~1"
+    Info: Node "clr_r~0" has logic level of 0
+    Info: Node "clr_r" has logic level of 1
+Warning: Found logic contention at time 252.79 ns on bus node "|bloco_controle|load_r~1"
+    Info: Node "load_r~0" has logic level of 1
+    Info: Node "load_r" has logic level of 0
+Warning: Found logic contention at time 253.45 ns on bus node "|bloco_controle|clr_r~1"
+    Info: Node "clr_r~0" has logic level of 0
+    Info: Node "clr_r" has logic level of 1
+Warning: Found logic contention at time 256.12 ns on bus node "|bloco_controle|load_r~1"
+    Info: Node "load_r~0" has logic level of 1
+    Info: Node "load_r" has logic level of 0
+Warning: Found logic contention at time 256.78 ns on bus node "|bloco_controle|clr_r~1"
+    Info: Node "clr_r~0" has logic level of 0
+    Info: Node "clr_r" has logic level of 1
+Warning: Found logic contention at time 259.45 ns on bus node "|bloco_controle|load_r~1"
+    Info: Node "load_r~0" has logic level of 1
+    Info: Node "load_r" has logic level of 0
+Warning: Found logic contention at time 260.0 ns on bus node "|bloco_controle|clr_r~1"
+    Info: Node "clr_r~0" has logic level of 0
+    Info: Node "clr_r" has logic level of 1
+Warning: Found logic contention at time 262.75 ns on bus node "|bloco_controle|load_r~1"
+    Info: Node "load_r~0" has logic level of 1
+    Info: Node "load_r" has logic level of 0
+Warning: Found logic contention at time 265.0 ns on bus node "|bloco_controle|clr_r~1"
+    Info: Node "clr_r~0" has logic level of 1
+    Info: Node "clr_r" has logic level of 0
+Warning: Found logic contention at time 268.55 ns on bus node "|bloco_controle|load_r~1"
+    Info: Node "load_r~0" has logic level of 0
+    Info: Node "load_r" has logic level of 1
+Warning: Truncated list of logic contention messages
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      95.45 %
+Info: Number of transitions in simulation is 15871
+Info: Quartus II Simulator was successful. 0 errors, 101 warnings
+    Info: Peak virtual memory: 155 megabytes
+    Info: Processing ended: Sun Jun 16 02:02:11 2013
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+

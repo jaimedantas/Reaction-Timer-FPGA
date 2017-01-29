@@ -4,7 +4,7 @@ This project mensures the time reaction of a human being in a Field-Programmable
 ##Altera FPGA
 ![](https://github.com/jaimedantas/Reaction-Timer-FPGA/blob/master/fpga_image.png)
 
-All the code was made in low level and all the operations were implemented in VHDL. Also, the processor was created to execute the instructions. The figure below show the block diagram of the project.
+All the code was made in low level and all the operations were implemented in VHDL. Also, a processor was created to execute the instructions. The figure below shows the block diagram of the project.
 
 ![](https://github.com/jaimedantas/Reaction-Timer-FPGA/blob/master/controle.jpg)
 

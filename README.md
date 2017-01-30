@@ -11,3 +11,5 @@ All the code was made in low level and all the operations were implemented in VH
 The finite state machine is shown in the figure below.
 
 ![](https://github.com/jaimedantas/Reaction-Timer-FPGA/blob/master/maquina_finitas.jpg)
+
+https://www.youtube.com/watch?v=eJSUn5-c7A4
